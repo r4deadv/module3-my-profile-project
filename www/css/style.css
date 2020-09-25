@@ -1,49 +1,122 @@
 body {
-    margin: 30px;
+    margin: 0;
+    background: #40a8c4;
     font-family: Arial, Helvetica, sans-serif;
-    background: #83AF9B;
 }
 h1 {
-    background: #FE4365;
-    color: #F9CDAD;
+    background: #ffc93c;
     font-size: 6em;
     padding: 50px;
+    font-variant: small-caps;
+    color: #07689f;
     margin-bottom: 0;
 }
-h2 {
-    margin-bottom: 50px;
-    color: #FE4365;
+.header h2 {
+    background: #ffc93c;
     font-size: 2em;
+    font-variant: small-caps;
+    color: #07689f;
+    padding: 0px 20px 20px 50px;
+    margin: 0;
 }
 q {
+    text-align: right;
     font-size: 1.5em;
+    font-style: italic;
+    display: block;
+    padding: 10px;
+    padding-top: 30px;
 }
-p {
-    background: #FC9D9A;
-    color: whitesmoke;
-    padding: 50px;
+.section1 {
+    background: #07689f;
+    margin: 0;
+    padding-left: 50px;
+}
+.section2 {
+    background: #ffc93c;
+    margin: 0;
+    padding-left: 50px;
+}
+.section1 h2, .section2 h2 {
+    margin-top: 0;
+}
+.sub-section p {
+    margin-bottom: 0;
+}
+.header p {
+    padding: 30px 50px;
+    margin-bottom: 0;
+    color: black;
     font-size: 1.2em;
 }
-h3 {
-    color: #FE4365;
-    font-weight: bold;
-    font-size: 1.3em;
-    margin-top: 50px;
+#education {
+    color: #ffc93c;
 }
-ul, ol {
-    margin-left: 30px;
-    
+#work {
+    color: #07689f;
+}
+#favorites {
+    color: #ffc93c;
+}
+#education h2, #work h2, #favorites h2 {
+    font-variant: small-caps;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+#education header p q, #work header p q, #favorites header p q {
+    display: inline;
+    text-align: left;
+    font-size: 1em;
+    padding-left: 0;
+}
+.sub-section h3 {
+    font-variant: small-caps;
+}
+.p-sub-bottom, #ul-bottom {
+    padding-bottom: 30px;
 }
 ul {
     list-style: square;
 }
-li {
-    padding: 10px;
+#ul-bottom {
+    list-style: none;
 }
-a:visited {
-    color: black;
+a:link, a:visited {
+    color: #ffc93c;
+    text-decoration: none;
 }
 a:hover {
-    color: whitesmoke;
-    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    background: #ffc93c;
+}
+#ul-bottom li {
+    padding: 3px 0;
+}
+footer p {
+    padding-left: 50px;
+}
+footer a {
+    padding: 5px;
+    font-size: 2em;
+}
+footer a:link, footer a:visited {
+    font-size: 2em;
+}
+footer a:hover {
+    font-size: 2em;
+    background: #40a8c4;
+    color: #07689f;
+}
+i:hover {
+    transition: 0.9s;
+    transform: rotateY(180deg);
+}
+.favorites ul li {
+    padding-top: 3px;;
+}
+#wrapper {
+    width: 80vw;
+    margin: 0 auto;
 }
