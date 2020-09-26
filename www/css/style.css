@@ -3,6 +3,10 @@ body {
     background: #40a8c4;
     font-family: Arial, Helvetica, sans-serif;
 }
+#wrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
 h1 {
     background: #ffc93c;
     font-size: 6em;
@@ -10,6 +14,10 @@ h1 {
     font-variant: small-caps;
     color: #07689f;
     margin-bottom: 0;
+}
+h3 {
+    font-size: 1.4em;
+    font-variant: small-caps;
 }
 .header h2 {
     background: #ffc93c;
@@ -42,6 +50,7 @@ q {
 }
 .sub-section p {
     margin-bottom: 0;
+    margin-top: 5px;
 }
 .header p {
     padding: 30px 50px;
@@ -49,14 +58,11 @@ q {
     color: black;
     font-size: 1.2em;
 }
-#education {
+#education, #favorites {
     color: #ffc93c;
 }
 #work {
     color: #07689f;
-}
-#favorites {
-    color: #ffc93c;
 }
 #education h2, #work h2, #favorites h2 {
     font-variant: small-caps;
@@ -71,15 +77,19 @@ q {
     padding-left: 0;
 }
 .sub-section h3 {
-    font-variant: small-caps;
+    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 .p-sub-bottom, #ul-bottom {
     padding-bottom: 30px;
 }
 ul {
     list-style: square;
+    margin-top: 5px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
 }
-#ul-bottom {
+#ul-link {
     list-style: none;
 }
 a:link, a:visited {
@@ -91,11 +101,9 @@ a:hover {
     font-size: 1.1em;
     background: #ffc93c;
 }
-#ul-bottom li {
-    padding: 3px 0;
-}
 footer p {
-    padding-left: 50px;
+    /*padding-left: 50px;*/
+    text-align: center;
 }
 footer a {
     padding: 5px;
@@ -116,7 +124,15 @@ i:hover {
 .favorites ul li {
     padding-top: 3px;;
 }
-#wrapper {
-    width: 80vw;
-    margin: 0 auto;
+.favorites  h3 + ul {
+    padding-bottom: 20px;
+}
+.favorites h3 {
+    margin-bottom: 0;
+}
+.h3-first {
+    margin-top: 30px;
+}
+#h3-last {
+    margin-top: 0;
 }
